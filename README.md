@@ -19,5 +19,7 @@ This project develops credit risk analysis of the Lending Club loan dataset from
 ## Dataset
 
 This project uses the Lending Club loan dataset from Kaggle.
+
 Due to Google BigQuery storage and processing constraints, a sampled subset of the original dataset was used for analysis. A total of 100,000 rows were selected instead of the full dataset.
+
 Source: https://www.kaggle.com/datasets/adarshsng/lending-club-loan-data-csv
