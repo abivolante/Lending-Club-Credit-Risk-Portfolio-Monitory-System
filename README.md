@@ -24,9 +24,9 @@ Due to Google BigQuery storage and processing constraints, a sampled subset of t
 
 Source: https://www.kaggle.com/datasets/adarshsng/lending-club-loan-data-csv
 
-### Phase 1: Portfolio Overview
+## Phase 1: Portfolio Overview
 
-# Key Findings:
+### Key Findings:
 - The sample of 100,000 loan accounts has approximately £1.59 billion in funded exposure.
 - Approximately 83% of funded exposure is concentrated within Grades A-C.
 - Current loans account for approximately 97.1% of total funded exposure.
