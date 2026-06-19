@@ -8,8 +8,8 @@ This project develops credit risk analysis of the Lending Club loan dataset from
 - Identify key drivers of loan losses.
 - Monitor delinquency and early warning indicators.
 - Segment borrowers by risk characteristics.
-- Translate findings into actionable credit policy recommendations
-- Build Power BI dashboard for ongoing monitoring.
+- Translate findings into actionable credit policy recommendations.
+- Build a Power BI dashboard for ongoing monitoring.
 
 ## Tools
 - Google BigQuery (data storage and SQL processing)
