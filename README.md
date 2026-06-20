@@ -16,6 +16,28 @@ This project develops a credit risk analysis of the Lending Club loan dataset fr
 - SQL (data transformation and analytical queries)
 - Power BI (interactive dashboarding and reporting)
 
+ ## Project Structure
+
+This project is organised into six phases:
+
+- **Phase 1: Portfolio Exposure**  
+  We assess the total portfolio size and analyse capital distribution across borrower segments and loan statuses.
+
+- **Phase 2: Credit Risk Performance**  
+  We evaluate borrower repayment behaviour and assess the effectiveness of the credit grading system in differentiating risk levels.
+
+- **Phase 3: Loss Distribution**  
+  We identify where actual financial losses are concentrated across credit grades and loan purposes.
+
+- **Phase 4: Delinquency & Exposure**
+  We analyse early-stage delinquency and estimate potential future exposure at default.
+
+- **Phase 5: Risk Segmentation**  
+  We combine default risk and exposure to identify high-impact segments within the loan portfolio.
+
+- **Phase 6: Power BI Dashboard Development**  
+  We build an interactive dashboard to monitor portfolio performance.
+
 ## Dataset
 
 This project uses the Lending Club loan dataset from Kaggle.
@@ -25,24 +47,15 @@ Due to Google BigQuery storage and processing constraints, a sampled subset of t
 Source: https://www.kaggle.com/datasets/adarshsng/lending-club-loan-data-csv
 
 
-## Phase 1: Portfolio Overview
-
-This phase assesses the total portfolio size and capital distribution across borrower segments and loan statuses.
-
-### Findings:
+## Phase 1: Portfolio Overview Findings:
 - The sample of 100,000 loan accounts represents approximately £1.59 billion in funded exposure.
 - Approximately 83% of funded exposure is concentrated in Grades A–C.
 - Current loans account for ~97.1% of total funded exposure.
 - Delinquent and charged-off loans represent less than 1% of portfolio exposure.
 
 
-## Phase 2: Credit Risk Performance
+## Phase 2: Credit Risk Performance Findings:
 
-This phase evaluates borrower repayment performance and assesses the effectiveness of the credit grading system in risk levels.
-
-A loan is classified as defaulted if its status is either 'Charged Off' or 'Default'.
-
-### Findings:
 - The observed portfolio default rate is 0.019% (19 defaulted loans out of 100,000). (The extremely low observed default rate is likely influenced by sampling bias and under-representation of defaulted loans in the dataset. Result should be interpreted as an insight rather than a true estimate.)
 - Credit grade is the strongest predictor of default risk, with Grade G showing the highest default rate. The low observed default rate by other higher risk grades is also likely influence by sampling bias. 
 - Higher credit grades (A–C)  exhibit very low observed default rates.
@@ -50,11 +63,7 @@ A loan is classified as defaulted if its status is either 'Charged Off' or 'Defa
 - Home ownership has some relationship with default risk, with homeownes showing slightly higher observed default rates than renters.
 
 
-## Phase 3: Credit Risk Performance
-
-This phase identifies where financial impact is concentrated beyond default rates.
-
-### Findings:
+## Phase 3: Credit Risk Performance Findings:
 - The total charged off exposure amounted to approximately £300,000.
 - Grades A to C account for the highest number of charged-off exposure. This could be due to the high concentration of loans allocated to borrowers of higher grades. 
 - Debt consolidation, home improvement, and credit card loans account for the largest share of charged-off exposure. Higher losses in these categories are likely driven by their larger share of overall lending activity.
