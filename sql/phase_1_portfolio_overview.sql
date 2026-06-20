@@ -20,10 +20,10 @@ SELECT
 FROM `lending-club-499707.lending_club.loan`;
 
 
--- Total Funded Exposure
+-- Total Funded Exposure (in billions)
 
 SELECT
-    SUM(loan_amnt) AS total_funded_exposure
+    ROUND(SUM(loan_amnt)/1e9, 2) AS total_funded_exposure
 FROM `lending-club-499707.lending_club.loan`;
 
 
@@ -46,10 +46,7 @@ grade_exposure AS (
 SELECT
     g.grade,
     g.exposure,
-    ROUND(
-        100.0 * g.exposure / p.total_funded_exposure,
-        2
-    ) AS exposure_pct
+    CONCAT(ROUND(100.0 * g.exposure / p.total_funded_exposure,2), '%') AS exposure_pct
 FROM grade_exposure AS g
 CROSS JOIN portfolio_exposure AS p
 ORDER BY g.exposure DESC;
@@ -74,10 +71,7 @@ status_exposure AS (
 SELECT
     s.loan_status,
     s.exposure,
-    ROUND(
-        100.0 * s.exposure / p.total_funded_exposure,
-        2
-    ) AS exposure_pct
+    CONCAT(ROUND(100.0 * s.exposure / p.total_funded_exposure,2), '%') AS exposure_pct
 FROM status_exposure AS s
 CROSS JOIN portfolio_exposure AS p
-ORDER BY s.exposure DESC
+ORDER BY s.exposure DESC;
