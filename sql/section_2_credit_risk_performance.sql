@@ -1,5 +1,5 @@
 -- =====================================================
--- PHASE 2: CREDIT RISK PERFORMANCE
+-- Section 2: CREDIT RISK PERFORMANCE
 -- =====================================================
 --
 -- Objective:
