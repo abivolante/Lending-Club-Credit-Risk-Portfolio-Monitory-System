@@ -1,6 +1,6 @@
 -- =====================================================
 -- CREDIT RISK PORTFOLIO ANALYSIS
--- PHASE 1: PORTFOLIO OVERVIEW
+-- Section 1: PORTFOLIO OVERVIEW
 -- =====================================================
 --
 -- Objective:
