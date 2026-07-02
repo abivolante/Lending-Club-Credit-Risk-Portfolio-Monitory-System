@@ -18,7 +18,7 @@ This project develops a credit risk analysis of the Lending Club loan dataset fr
 
  ## Project Structure
 
-This project is organised into six sections:
+This project is organised into five sections:
 
 - **Section 1: Portfolio Exposure**  
   We assess the total portfolio size and analyse capital distribution across borrower segments and loan statuses.
@@ -32,11 +32,6 @@ This project is organised into six sections:
 - **Section 4: Delinquency & Exposure**
   We analyse early-stage delinquency and estimate potential future exposure at default.
 
-- **Section 5: Risk Segmentation**  
-  We combine default risk and exposure to identify high-impact segments within the loan portfolio.
-
-- **Section 6: Power BI Dashboard Development**  
-  We build an interactive dashboard to monitor portfolio performance.
 
 ## Dataset
 
